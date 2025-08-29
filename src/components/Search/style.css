@@ -1,0 +1,44 @@
+/* wrapper para alinhar a search à esquerda dentro do container principal */
+.search-wrapper {
+    width: 100%;
+    max-width: 1280px; /* manter alinhamento com o conteúdo */
+    margin: 0; /* não centralizar com auto */
+    padding: 0 2rem; /* mesmo padding lateral do #root */
+    display: flex;
+    justify-content: flex-start; /* alinha o input à esquerda */
+}
+
+.search-full-wrapper {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+    padding: 0 2rem; /* alinhamento com o container */
+    display: flex;
+    justify-content: flex-start; /* alinha o input à esquerda */
+}
+
+.search-container {
+    display: block;
+}
+
+.search-input {
+    margin: 16px 0; /* remover auto que centrava horizontalmente */
+    padding: 16px 24px;
+    width: 420px;
+    max-width: 90vw;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+    background: #fff;
+}
+.search-input:focus {
+    border: 1.5px solid #3182ce;
+    box-shadow: 0 4px 16px rgba(49,130,206,0.12);
+}

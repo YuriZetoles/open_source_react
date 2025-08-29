@@ -1,0 +1,48 @@
+.header {
+    /* full-bleed estático (não fixo) */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.header-background {
+    background: linear-gradient(rgba(230, 238, 245, 0.7), rgba(230, 238, 245, 0.7)), url(../../../public/images/headerBackground.jpg) no-repeat center center/cover;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 3rem 1rem;
+    overflow: hidden;
+}
+
+.titulo {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #222;
+    margin: 0 0 20px 0;
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.search-wrapper {
+    max-width: 1280px; /* mesmo máximo do #root */
+    margin: 0; /* não centraliza mais com auto, fica alinhado à esquerda */
+    padding: 0 2rem; /* mesmo padding lateral do container */
+    display: flex;
+    justify-content: flex-start; /* alinha à esquerda */
+    margin-top: -40px; /* posiciona a barra um pouco sobrepondo o header */
+    width: 100%;
+}
+
+.search-container {
+    display: block;
+}
